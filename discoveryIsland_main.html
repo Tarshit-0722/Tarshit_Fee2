@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscoveryLand</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            background-image: url(https://www.datocms-assets.com/128889/1714657126-bakers-bay-golf-and-ocean-club-copy.jpg?auto=format&fit=max&h=3000&w=2000);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav {
+            width: 90%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.7em;
+            color: #2d5c4d;
+            margin-top: 5px;
+        }
+
+        .logo img {
+            width: 150px;
+            height: 30px;
+            border-radius: 12px;
+            margin-right: 15px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .links ul {
+            display: flex;
+            gap: 10px;
+        }
+
+        .links li {
+            list-style: none;
+        }
+
+        .links a {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.2em;
+            padding: 8px 18px;
+            border-radius: 6px;
+            color: #fff;
+            position: relative;
+        }
+
+        .links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 3px;
+            background: #fff;
+            transition: 0.3s;
+        }
+
+        .links a:hover::after {
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            font-size: 1.8rem;
+            color: #fff;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 3em;
+            font-weight: 400;
+        }
+
+        .boxes {
+            width: 100%;
+            height: 100vh;
+            background-color: #111;
+        }
+
+        .boxes .box1 {
+            background-image: url(https://www.datocms-assets.com/128889/1715090594-lake-view-skiing-in-lake-tahoe-copy.jpg?auto=format&fit=max&h=3000&w=2000);
+        }
+
+        .gallery {
+            background: #000;
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        .gallery p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://discoverylandco.com/logo-dark.svg" alt="none">
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="first"><i>Discover</i><br>Your World</h1>
+    </div>
+
+    <div class="gallery">
+        <div>
+            <img src="https://www.datocms-assets.com/128889/1715090594-lake-view-skiing-in-lake-tahoe-copy.jpg" alt="Landscapes">
+            <p>Landscapes</p>
+        </div>
+        <div>
+            <img src="https://www.datocms-assets.com/128889/1714143802-barefoot-golf-at-gozzer-4.jpg?auto=format&fit=max&h=3000&w=2000" alt="Golf">
+            <p>Golf</p>
+        </div>
+        <div>
+            <img src="https://www.datocms-assets.com/128889/1715090484-wellness-gallery-1_11014826b3e36b3697374f276a89b517-2_210122_210812.jpg?auto=format&fit=max&h=3000&w=2000" alt="Wellness">
+            <p>Wellness</p>
+        </div>
+        <div>
+            <img src="https://www.datocms-assets.com/128889/1715090023-stocksy_txp3615512ad2e200_originaldelivery_1580323-1_210301_201432-copy.jpg?auto=format&fit=max&h=3000&w=2000" alt="Outdoor Pursuits">
+            <p>Outdoor Pursuits</p>
+        </div>
+        <div>
+            <img src="https://www.datocms-assets.com/128889/1715090539-luxury-clubhouse-yellowstone-club.jpg?auto=format&fit=max&h=3000&w=2000" alt="Clubhouses">
+            <p>Clubhouses</p>
+        </div>
+        <div>
+            <img src="https://www.datocms-assets.com/128889/1714657157-beach-front-dining-with-friends.jpg?auto=format&fit=max&h=3000&w=2000" alt="Lifestyle">
+            <p>Lifestyle</p>
+        </div>
+    </div>
+</body>
+
+</html>
