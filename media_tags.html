@@ -1,0 +1,120 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video</title>
+</head>
+<body>
+    <h1>Embedded YouTube Video</h1>
+    <div>
+        <embed src="https://www.youtube.com/embed/H0jgZjy_lr0" height="400px" width="800" allow="autoplay;" allowfullscreen></embed>
+    </div>
+</body>
+</html> -->             
+
+
+
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    
+
+
+        <iframe src="https://www.google.co.in/maps  " frameborder="100" allowfullscreen></iframe>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Media Portfolio</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+
+    .media-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    video, audio, iframe, object {
+      width: 100%;
+      margin: 20px 0;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+
+    /* Desktop-only autoplay music */
+    @media (min-width: 768px) {
+      .desktop-music {
+        display: block;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .desktop-music {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="media-section">
+    <h2>My Portfolio Media Section</h2>
+
+    <!-- Self-hosted video with subtitles -->
+    <video controls autoplay muted poster="thumbnail.avif" width="640" height="360" >
+      <source src="video.mp4" type="video/mp4">
+      <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English" default>
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Background music loop only for desktop -->
+    <audio src="music.mp3" controls autoplay loop type="audio/mpeg" preload="metadata"></audio>
+    
+
+    <h2>Transcript</h2>
+    
+    <details>
+        <summary>Click to view transcript</summary>
+        <p>
+            <strong>Interviewer:</strong> Welcome to the show! Today, we're discussing the future of web development.
+        </p>
+        <p>
+            <strong>Guest:</strong> Thanks for having me. It's an exciting topic. The landscape is constantly evolving with new frameworks and tools.
+        </p>
+        </details>
+      Your browser does not support audio playback.
+    </audio>
+    <hr><br><br>
+
+    <!-- Embedded Google Map -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019000377098!2d-122.41941568467912!3d37.77492977975924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c94e1baff%3A0x4a94e74a1b4ae2ee!2sSan%20Francisco!5e0!3m2!1sen!2sus!4v1617719091277!5m2!1sen!2sus"
+      width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+    <hr><br><br>
+    <!-- Downloadable PDF Resume using <object> -->
+    <object data="Video_Audio.pdf" type="application/pdf" width="100%" height="500">
+      <p>Your browser doesn't support PDF viewing. <a href="Video_Audio.pdf">Download the resume</a> instead.</p>
+    </object>
+  </section>
+
+</body>
+</html>
